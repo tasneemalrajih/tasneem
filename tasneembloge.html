@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tasneem blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity=
+    "sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="tasneem.css" />
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+<scrip src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+
+ function validateForm() {
+   var x = document.forms["form"]["firstname"].value;
+    var y = document.forms["form"]["lastname"].value;
+    var z = document.forms["form"]["email"].value;
+    var t = document.forms["form"]["inputState"].value;
+    var r = document.forms["form"]["Date"].value;
+
+
+   if (x == "") {
+     alert("The First Name must be filled out");
+     return false;
+   }
+   if (y == "") {
+     alert("The Last Name must be filled out");
+     return false;
+   }
+   if (z=="") {
+     alert("The Email must be filled out");
+     return false;
+   }
+   if (t == "") {
+     alert("The State must be select");
+     return false;
+   }
+   if (r == "") {
+     alert("The Date must be filled out");
+     return false;
+   }
+
+ }
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+    <img src="logo.png" width="300" height="200" alt="logo image">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <ul>
+      <li><a href="#p1">Home</a></li>
+      <li><a href="#p2">About</a></li>
+      <li><a href="#p3">Contact</a></li>
+      <li><a href="#p4">Portfolio</a></li>
+    </ul>
+    </div>
+  </nav>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <img src="tasneem1.png"  width="600" height="300">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 2</div>
+      <img src="c1.png"  width="600" height="300">
+
+    </div>
+
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  <br><br><br><br> <br>
+  <img src="c2.png" width="600" height="300">
+  <p class="card-text t">Tasneem Abdulrahman Alrajih,</strong> Bachelor of Information System  College of Computer and Information Sciences in<br>
+  Al Imam Mohammad Ibn Saud Islamic University, Riyadh, Saudi Arabia.</p>
+
+  <div class="page-header">
+<h1 class="rr "id="p4">Portfolio</h1>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+
+         <img src="SAL.jpeg" width="200" height="200" alt="logo image">
+
+      <div class="caption">
+        <p class="f">SAL Project</p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+  <img src="la.png" width="250" height="220" alt="logo image">
+
+      <div class="caption">
+        <p class="f">World Of Book Project</p>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+
+       <img src="gps.jpeg" width="200" height="200" alt="logo image">
+
+      <div class="caption">
+        <p class="f">GPS Project</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="page-header">
+<h1 class="rr" id="p3">Contact with me</h1>
+</div>
+
+ <form action="#" name="form" onsubmit="return validateForm()" method="post>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="firstname" class="f ">First Name: </label>
+      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Your First name.." required>
+
+
+    </div>
+    <div class="form-group col-md-6">
+      <label for="lastname" class="f ">Last Name: </label>
+      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Your last name.." required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="f ">Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email..">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="subject" class="f ">Subject: </label> <br>
+
+       <textarea id="count" class="form-control"  placeholder="Write something.." maxlength="500"></textarea>
+       <div class="d-flex">
+         <p class="error-msg">Character Limit Exceed</p>
+         <p class="float-right"><span id="countno">0</span>/500</p>
+         <br clear="both">
+       </div>
+
+       <script>
+       $(function(){
+         $("#count").keyup(function(event){
+           $("#countno").text($(this).val().length);
+           var x= $(this).val().length;
+           if (x>500) {
+             $(this).css("border",'1px solid red');
+             $(".error-msg").show();
+           }
+           else {
+              $(".error-msg").hide();
+               $(this).css("border",'');
+           }
+         });
+       })
+       </script>
+
+
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState" class="f ">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Low Priority</option>
+        <option>High Priority</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="date" class="f ">Date:</label>
+      <input type="text" class="form-control" id="Date">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary bb">Submit</button>
+</form>
+<script>
+$("#commentForm").validate;
+
+</script>
+
+<br> <br>
+<footer>
+        <p>© 2021 Tasneem Alrajih</p>
+        &nbsp&nbsp&nbsp<img src="logo.png" width="50" height="40">
+    </footer>
+
+<script src="script.js"></script>
+
+
+
+  </body>
+</html>

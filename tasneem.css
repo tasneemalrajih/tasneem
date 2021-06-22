@@ -1,0 +1,248 @@
+
+
+
+    body{
+     Background-image:URL("bak.jpeg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width:inherit;
+
+
+
+
+
+
+
+
+    }
+
+  nav{
+
+  }
+   ul{
+    list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:0
+
+  }
+  a{
+    display:block;
+	color:gray;
+	text-decoration:none;
+	font-weight:400;
+	font-size:25px;
+	line-height:32px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+
+  }
+  nav ul li{
+  position:relative;
+
+	float:left;
+	margin:0;
+	padding:0;
+  left: 100px;
+  }
+  navp ul li:hover{
+	background:black;
+
+}
+
+ .c{
+ font-style:italic;
+ color:#595959;
+ text-align: center;
+ }
+ .t{
+
+ position: relative;
+ text-align: center;
+ margin-left: 570px;
+  bottom: 300px;
+  border: 3px;
+  font-style:italic;
+ color:#595959;
+   font-size: 25px;
+
+ }
+ .f{
+ font-style:italic;
+ color:#595959;
+ text-align: center;
+ }
+ .rr{
+ font-style:italic;
+ color:#595959;
+
+ }
+
+ .k{
+ position: relative;
+ background-position:center;
+
+ }
+
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color:#595959;
+    color: #fff;
+     font-style:italic;
+
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.g{
+text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+textarea{
+  width: 600px;
+  height: 100px;
+}
+.bb{
+  text-align: center;
+  background-color:gray;
+  color:black;
+  border-color:gray;
+
+
+}
+.error-msg{
+  color: red;
+  float: left;
+
+}
+.float-right{
+  float:right;
+
+}
+.alert {
+    margin: 5px;
+    display: none;
+}
